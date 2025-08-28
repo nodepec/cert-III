@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en" class="h-full">
-<link rel="icon" href="web.ico">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b1020" />
+  <link rel="icon" href="web.ico">
   <title>Website</title>
   <script>
     (function() {
@@ -94,28 +94,12 @@
             <p className="mt-1 text-gray-600 dark:text-gray-300">this is a header</p>
           </header>
 
-          <Card title="The Brief" kicker="Chapter 1">
-            <p>
-              An urgent note lands on your desk: a cyber criminal is on the move,
-              leaving faint digital footprints. Your task is to follow those tracks
-              and shut them down. The suspect has a habit of hiding keys inside the
-              names of buildings—an odd quirk, but it’s helped investigators before.
-            </p>
+          <Card title="Cool card" kicker="Card kicker">
+            <p>this is a paragraph</p>
           </Card>
 
-          <Card title="Ping from the Field" kicker="Chapter 2 – Coordinates">
-            <p>
-              A suspicious device lights up somewhere in <em>[REDACTED]</em>. Its
-              trace yields precise mapping data:
-            </p>
-            <pre className="whitespace-pre-wrap bg-gray-50 dark:bg-gray-950/60 rounded-lg p-3">
-51.4492441, -2.5872027, 3a, 7y, 279.97h, 92.54t
-            </pre>
-            <p>
-              You swivel to the big screen, punch in the numbers, and let the map
-              settle. If the suspect is using building names as keys, then
-              identifying the exact building could unlock the next stage.
-            </p>
+          <Card title="backgrounds" kicker="classnames">
+            <pre className="whitespace-pre-wrap bg-gray-50 dark:bg-gray-950/60 rounded-lg p-3">cool classname</pre>
           </Card>
 
         </article>
@@ -193,7 +177,7 @@
           </header>
 
           <main className="mx-auto max-w-5xl px-4 py-8">
-            {tab === "home" ? <Home /> : <examples />}
+            {tab === "home" ? <Home /> : <Examples />}
           </main>
 
         </div>
