@@ -102,6 +102,20 @@
             <pre className="whitespace-pre-wrap bg-gray-50 dark:bg-gray-950/60 rounded-lg p-3">cool classname</pre>
           </Card>
 
+          <Card title="images" kicker="justify-center and gap-4 stuff">
+          <div className="flex justify-center items-center gap-4">
+            <img src="react.png" className="w-64 h-auto" alt="React logo" />
+            <img src="tailwind.png" className="w-64 h-auto" alt="Tailwind logo" />
+          </div>
+          </Card>
+
+          <Card title="videos" kicker="using youtube embeds">
+              <div className="flex justify-center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=eC__vtUcCmZGo9y1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </Card>
+
+
         </article>
       );
     }
@@ -189,4 +203,3 @@
   </script>
 </body>
 </html>
-
