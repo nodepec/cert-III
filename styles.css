@@ -1,25 +1,8 @@
-:root {
-  --bg: #0a0a0b;
-  --fg: #eaeaea;
-  --muted: #b8b8b8;
-  --brand1: #6366f1;
-  --brand2: #7c3aed;
-  --border: rgba(255, 255, 255, 0.12);
-  --radius: 12px;
-  --shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
-
 body {
   margin: 0;
-  font-family: sans-serif;
-  background: var(--bg);
-  color: var(--fg);
-}
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 1rem;
+  font-family: 'Krona One', sans-serif;
+  background: #0a0a0b;
+  color: #eaeaea;
 }
 
 .site-header {
@@ -30,69 +13,39 @@ body {
   background: #222;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-}
-
 .title {
-  margin: 0;
   font-size: 1.5rem;
+  margin: 0;
 }
 
-.topnav a {
+.navbar a {
   margin-left: 1rem;
   text-decoration: none;
-  color: var(--fg);
+  color: #eaeaea;
 }
 
-.topnav a.active {
-  color: var(--brand1);
+.navbar a.active {
+  color: #7c3aed;
 }
 
 .layout {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  padding: 2rem;
 }
 
 .main-article {
   flex: 4;
   background: #1a1a1a;
   padding: 1rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.main-article h2 {
-  color: var(--brand1);
-}
-
-.main-article img {
-  max-width: 100%;
-  border-radius: var(--radius);
-  margin-top: 1rem;
+  border-radius: 12px;
 }
 
 .sidebar {
   flex: 1;
   background: #111;
   padding: 1rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.sidebar h3 {
-  color: var(--brand2);
-  margin-top: 0;
+  border-radius: 12px;
 }
 
 .sidebar ul {
@@ -105,17 +58,87 @@ body {
 }
 
 .sidebar a {
-  color: var(--fg);
+  color: #eaeaea;
   text-decoration: none;
 }
 
 .sidebar a:hover {
-  color: var(--brand1);
-  text-decoration: underline;
+  color: #6366f1;
 }
 
-@media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
+.container {
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+}
+
+footer a {
+  color: #eaeaea;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* Fade-in animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section, article, aside {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effect for tiles and links */
+.tile, .sidebar a {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.tile:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.3);
+}
+
+.sidebar a:hover {
+  color: #7c3aed;
+  transform: translateX(3px);
+}
+
+/* Navbar hover underline */
+.navbar a {
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #6366f1;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Facebook icon hover pulse */
+footer a {
+  transition: transform 0.3s ease;
+}
+
+footer a:hover {
+  transform: scale(1.2);
+  color: #1877f2;
 }
