@@ -37,7 +37,7 @@ font-size:16px; line-height:1.65; color:var(--ink); background:var(--bg);
 .nowrap{white-space:nowrap}
 .flow > * + *{ margin-top: var(--flow-space, var(--s1)) }
 .stack-sm > * + *{ margin-top: var(--s-2) }
-.stack-lg > * + *{ margin-top: var(--s2) }
+.stack-lg > * + *{ margin-top: var(--flow-space, var(--s1)) }
 .prose{max-width:var(--measure)}
 
 /* ===== Skip link ===== */
@@ -157,5 +157,6 @@ transition: transform .06s ease, background .15s ease;
 .site-nav a{ padding:.5rem .7rem }
 
 }
+
 
 
