@@ -51,7 +51,6 @@ border-radius:12px;
 .site-header{ background:var(--panel); border-bottom:1px solid var(--line) }
 .header-inner{ display:flex; align-items:center; justify-content:space-between; gap:var(--s1); padding-block:var(--s1) }
 .brand{ display:flex; align-items:center; gap:.65rem; text-decoration:none }
-.brand-mark{ height:40px }
 .brand-chip__text{ font:700 18px/1 Inter, sans-serif; fill:var(--accent-ink) }
 .brand-chip__text span{ fill:var(--ink) }
 
@@ -158,3 +157,4 @@ transition: transform .06s ease, background .15s ease;
 .site-nav a{ padding:.5rem .7rem }
 
 }
+
