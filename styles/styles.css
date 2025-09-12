@@ -36,7 +36,7 @@ font-size:16px; line-height:1.65; color:var(--ink); background:var(--bg);
 .container{width:min(1100px, 92vw); margin-inline:auto; padding-inline:var(--s1)}
 .nowrap{white-space:nowrap}
 .flow > * + *{ margin-top: var(--flow-space, var(--s1)) }
-.stack-sm > * + *{ margin-top: var(--s-2) }
+.stack-sm > * + *{ margin-top: var(--flow-space, var(--s1)) }
 .stack-lg > * + *{ margin-top: var(--flow-space, var(--s1)) }
 .prose{max-width:var(--measure)}
 
@@ -157,6 +157,7 @@ transition: transform .06s ease, background .15s ease;
 .site-nav a{ padding:.5rem .7rem }
 
 }
+
 
 
 
