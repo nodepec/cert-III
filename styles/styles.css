@@ -52,7 +52,6 @@ border-radius:12px;
 .header-inner{ display:flex; align-items:center; justify-content:space-between; gap:var(--s1); padding-block:var(--s1) }
 .brand{ display:flex; align-items:center; gap:.65rem; text-decoration:none }
 .brand-mark{ height:40px }
-.brand-chip{ fill:#2d1f47 }
 .brand-chip__text{ font:700 18px/1 Inter, sans-serif; fill:var(--accent-ink) }
 .brand-chip__text span{ fill:var(--ink) }
 
@@ -157,4 +156,5 @@ transition: transform .06s ease, background .15s ease;
 @media (max-width:520px){
 .site-nav ul{ gap:var(--s-3) }
 .site-nav a{ padding:.5rem .7rem }
+
 }
